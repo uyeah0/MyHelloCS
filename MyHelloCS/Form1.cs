@@ -21,5 +21,10 @@ namespace MyHelloCS
         {
 
         }
+
+        private void btnGreeting_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("안녕하세요~ 귀요미들이 모여있는 3학년 1반 입니다~~!!", "나님이 말씀하시길...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
