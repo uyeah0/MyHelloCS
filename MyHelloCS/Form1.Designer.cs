@@ -28,13 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnGreeting = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnGreeting
+            // 
+            this.btnGreeting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnGreeting.Font = new System.Drawing.Font("궁서체", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnGreeting.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnGreeting.Location = new System.Drawing.Point(181, 145);
+            this.btnGreeting.Name = "btnGreeting";
+            this.btnGreeting.Size = new System.Drawing.Size(150, 91);
+            this.btnGreeting.TabIndex = 0;
+            this.btnGreeting.Text = "환영 인사";
+            this.btnGreeting.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 321);
+            this.Controls.Add(this.btnGreeting);
             this.Name = "FormMain";
             this.Text = "마이헬로우";
             this.Load += new System.EventHandler(this.FormMain_Load);
@@ -43,6 +57,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGreeting;
     }
 }
 
